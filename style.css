@@ -3,21 +3,21 @@
 } */
 
 
-#padre{
+#padre {
     width: 100%;
     height: 100%;
     border: none;
 }
 
-#div1{
+/* #div1 {
     width: 100%;
     height: 70px;
     float: left;
     border: black solid;
-}
+} */
 
 
-#div2{
+#div2 {
     width: 100%;
     height: 400px;
     clear: both;
@@ -26,7 +26,7 @@
 }
 
 
-#div3{
+#div3 {
     width: 100%;
     height: 600px;
     clear: both;
@@ -36,7 +36,7 @@
 }
 
 
-#div4{
+#div4 {
     width: 100%;
     height: 600px;
     clear: both;
@@ -45,7 +45,7 @@
 }
 
 
-#div5{
+#div5 {
     width: 100%;
     height: 600px;
     clear: both;
@@ -54,7 +54,7 @@
 }
 
 
-#div6{
+#div6 {
     width: 100%;
     height: 600px;
     clear: both;
@@ -63,7 +63,7 @@
 }
 
 
-#div7{
+#div7 {
     width: 100%;
     height: 100px;
     clear: both;
@@ -72,9 +72,170 @@
 }
 
 
-.columnas{
+.columnas {
     width: 25%;
     height: 600px;
     border: black solid;
     float: left;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header */
+header {
+    height: 50x;
+    /* background: #AED6F1; */
+    background: #055786;
+    padding: 0 50px;
+    color: black;
+    /*Aplicamos el display flex*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.menu a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    /*0 px de arriba y de izquierda y derecha de 10 px*/
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+/* Otras de las opciones que nos da el flex box es que podemos poner un orden */
+.mostrar-menu {
+    order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu a:hover,
+.esconder-menu a:hover {
+    color: #FDFEFE;
+}
+
+#check {
+    display: none;
+}
+
+/* Banner */
+#banner {
+    padding: 0px 50px;
+    background-image: url(img/bannerFoto.jpg);
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Dentro del banner utilizamos un selector ::before */
+#banner::before {
+    content: '';
+    background: rgba(77, 77, 92, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    left: 0;
+}
+
+.contenido-banner {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido-banner h3 {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+
+.contenido-banner h3 span {
+    font-weight: 600;
+}
+
+.contenido-banner h4 {
+
+    font-weight: 400;
+    padding: 40px 0px;
+}
+
+.contenido-banner h4 span {
+    font-weight: 600;
+}
+
+.boton-compratuentrada {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #AED6F1;
+    padding: 20px 40px;
+    /* Ocupar lo que tiene el interior */
+    align-self: baseline;
+}
+
+.boton-compratuentrada:hover {
+    background: #D6EAF8;
+    transition: all 0.4s;
+}
+
+/* Responsive */
+@media(max-width:768px) {
+
+    /* HEADER */
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #AED6F1;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        /* Arriba y abajo 100 px y 0 izquierda y derecha */
+        padding: 100px 0px;
+        /* Para que si agregemos otros elemento no se pisen agregamos un z-index */
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    /* Configurar los enlaces */
+    .menu a {
+        /* Hacemos para que se pongan en columna */
+        display: block;
+        /* Para que se separen un poco */
+        padding: 20px;
+    }
+
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    /* Usamos el seudoSelector (Cuando el check esté checkeado)*/
+    #check:checked~.menu {
+        right: 0;
+    }
 }
