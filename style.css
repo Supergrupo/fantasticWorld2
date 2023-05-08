@@ -53,10 +53,11 @@
 
 #div6 {
     width: 100%;
-    height: 600px;
+    /* height: 300px; */
+    height: auto;
     clear: both;
     float: left;
-    border: black solid;
+    border: none;
 }
 
 /* #div7 {
@@ -70,7 +71,7 @@
 .columnas {
     width: 25%;
     height: 600px;
-    border: black solid;
+    border:none;
     float: left;
 }
 
@@ -134,7 +135,7 @@ header {
 #banner {
     padding: 0px 50px;
     background-image: url(img/bannerFoto.jpg);
-    height: 45vh;
+    height: 600px;
     background-size: cover;
     background-position: center;
 }
@@ -142,10 +143,10 @@ header {
 /* Dentro del banner utilizamos un selector ::before */
 #banner::before {
     content: '';
-    background: rgba(77, 77, 92, 0.6);
+    background: rgba(124, 124, 139, 0.6);
     position: absolute;
     width: 100%;
-    height: 45vh;
+    height: 600px;
     left: 0;
 }
 
@@ -272,6 +273,57 @@ body {
     transform: rotateY(180deg);
 }
 
+.title {
+    /* Чтобы спрятать часть линий, которые 
+    ** будут вылазить за пределы блока */
+    overflow: hidden;
+    /* Выравнивание заголовка по центру, 
+    ** можно использовать left, right */
+    text-align: center;
+    /* Тут можно добавить другие стили для заголовка */
+    font-size: 30px;
+}
+.title span {
+    /* Стили тега обертки для заголовков 
+    ** в несколько строк */
+    display: inline-block;
+    vertical-align: middle;
+}
+.title:before,
+.title:after {
+    /* Обязательно указываем пустое свойство content, 
+    ** иначе псевдоэлементы не появятся на сайте */
+    content: "";
+    /* Указываем что наши линии будут строчно-блочные и 
+    ** выравнивание по высоте - по центру */
+    display: inline-block;
+    vertical-align: middle;
+    /* Задаем ширину 100% и выбираем высоту линии, 
+    ** в нашем примере она равна 4 пикселям */
+    width: 100%;
+    height: 4px;
+    /* Добавляем цвет для линии */
+    background-color: #00cf00;
+    /* Добавляем пседоэлемантам возможность изменить 
+    ** позицию линии, для создания отступов от текста */
+    position: relative;
+}
+.title:before {
+    /* Смещаем левую линию на 100% влево, чтобы линия 
+    ** встала рядом с текстом слева */
+    margin-left: -100%;
+    /* Указываем в пикселях отступ линии от текста заголовка */
+    left: -14px;
+}
+.title:after {
+    /* Смещаем правую линию на 100% вправо, чтобы 
+    ** линия встала рядом с текстом справа */
+    margin-right: -100%;
+    /* Указываем в пикселях отступ линии от текста заголовка */
+    right: -14px;
+}
+
+/* de Slava  */
 
 
 /* Responsive */
@@ -316,6 +368,12 @@ body {
     #check:checked~.menu {
         right: 0;
     }
+    
+        /* .photo-grid {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(8, auto);
+        } */
+    
 }
 
 
@@ -326,7 +384,7 @@ body {
     height: auto;
     /* clear: both; */
     /* float: left; */
-    border: black solid;
+    border: none;
     background: #055786;
 
     display: flex;
@@ -339,7 +397,7 @@ body {
 .columnas {
     width: 25%;
     height: 600px;
-    border: black solid;
+    border: none;
     float: left;
 }
 
@@ -510,3 +568,21 @@ body {
 .card .description input:hover {
     background: #20033e;
 }
+
+#div10{
+    width: 100%;
+    height: 450px;
+    clear:both;
+    float: left;
+    border: none;
+    background: beige;
+}
+
+.columnitas{
+    width: 33.33%;
+    height: 450px;
+    float: left;
+    border: none;
+}
+
+
