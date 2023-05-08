@@ -413,13 +413,10 @@ body {
     width: 300px;
     margin: 10px;
     transition: all 300ms;
-
 }
 
 .card:hover {
     width: 350px;
-
-
 }
 
 .card .cover {
