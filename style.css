@@ -53,10 +53,11 @@
 
 #div6 {
     width: 100%;
-    height: 300px;
+    /* height: 300px; */
+    height: auto;
     clear: both;
     float: left;
-    border: black solid;
+    border: none;
 }
 
 /* #div7 {
@@ -70,7 +71,7 @@
 .columnas {
     width: 25%;
     height: 600px;
-    border: black solid;
+    border:none;
     float: left;
 }
 
@@ -134,7 +135,7 @@ header {
 #banner {
     padding: 0px 50px;
     background-image: url(img/bannerFoto.jpg);
-    height: 45vh;
+    height: 600px;
     background-size: cover;
     background-position: center;
 }
@@ -142,10 +143,10 @@ header {
 /* Dentro del banner utilizamos un selector ::before */
 #banner::before {
     content: '';
-    background: rgba(77, 77, 92, 0.6);
+    background: rgba(124, 124, 139, 0.6);
     position: absolute;
     width: 100%;
-    height: 45vh;
+    height: 600px;
     left: 0;
 }
 
@@ -383,7 +384,7 @@ body {
     height: auto;
     /* clear: both; */
     /* float: left; */
-    border: black solid;
+    border: none;
     background: #055786;
 
     display: flex;
@@ -396,7 +397,7 @@ body {
 .columnas {
     width: 25%;
     height: 600px;
-    border: black solid;
+    border: none;
     float: left;
 }
 
@@ -570,3 +571,21 @@ body {
 .card .description input:hover {
     background: #20033e;
 }
+
+#div10{
+    width: 100%;
+    height: 450px;
+    clear:both;
+    float: left;
+    border: none;
+    background: beige;
+}
+
+.columnitas{
+    width: 33.33%;
+    height: 450px;
+    float: left;
+    border: none;
+}
+
+
