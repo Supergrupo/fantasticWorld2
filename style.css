@@ -368,6 +368,12 @@ body {
     #check:checked~.menu {
         right: 0;
     }
+    
+        /* .photo-grid {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(8, auto);
+        } */
+    
 }
 
 
