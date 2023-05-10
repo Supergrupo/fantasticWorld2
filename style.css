@@ -73,7 +73,7 @@
 .columnas {
     width: 25%;
     height: 600px;
-    border:none;
+    border: none;
     float: left;
 }
 
@@ -136,7 +136,7 @@ header {
 /* Banner */
 #banner {
     padding: 0px 50px;
-    background-image: url(img/bannerFoto.jpg);
+    background-image: url(img/videoBanner.gif);
     height: 600px;
     background-size: cover;
     background-position: center;
@@ -147,9 +147,9 @@ header {
     content: '';
     background: rgba(124, 124, 139, 0.6);
     position: absolute;
-    width: 100%;
+    width: 97.8%;
     height: 600px;
-    left: 0;
+    left: 16px;
 }
 
 .contenido-banner {
@@ -275,8 +275,8 @@ body {
     transform: rotateY(180deg);
 }
 
- /*  seccion texto y linea */
-.title {      
+/*  seccion texto y linea */
+.title {
     /* Чтобы спрятать часть линий, которые 
     ** будут вылазить за пределы блока */
     overflow: hidden;
@@ -286,12 +286,14 @@ body {
     /* Тут можно добавить другие стили для заголовка */
     font-size: 25px;
 }
+
 .title span {
     /* Стили тега обертки для заголовков 
     ** в несколько строк */
     display: inline-block;
     vertical-align: middle;
 }
+
 .title:before,
 .title:after {
     /* Обязательно указываем пустое свойство content, 
@@ -311,6 +313,7 @@ body {
     ** позицию линии, для создания отступов от текста */
     position: relative;
 }
+
 .title:before {
     /* Смещаем левую линию на 100% влево, чтобы линия 
     ** встала рядом с текстом слева */
@@ -318,6 +321,7 @@ body {
     /* Указываем в пикселях отступ линии от текста заголовка */
     left: -14px;
 }
+
 .title:after {
     /* Смещаем правую линию на 100% вправо, чтобы 
     ** линия встала рядом с текстом справа */
@@ -371,12 +375,12 @@ body {
     #check:checked~.menu {
         right: 0;
     }
-    
-        /* .photo-grid {
+
+    /* .photo-grid {
           grid-template-columns: repeat(1, 1fr);
           grid-template-rows: repeat(8, auto);
         } */
-    
+
 }
 
 
@@ -572,20 +576,18 @@ body {
     background: #20033e;
 }
 
-#div10{
+#div10 {
     width: 100%;
     height: 450px;
-    clear:both;
+    clear: both;
     float: left;
     border: none;
     background: beige;
 }
 
-.columnitas{
+.columnitas {
     width: 33.33%;
     height: 450px;
     float: left;
     border: none;
 }
-
-
