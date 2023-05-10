@@ -703,6 +703,18 @@ body {
     border: none;
 }
 
+
+.mascota{
+    width: 70%;
+    height: 80%;
+    position: relative;
+    float: right;
+    bottom: 250px;
+    left: 150px;
+}
+
+
+
 /* Contacto */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
