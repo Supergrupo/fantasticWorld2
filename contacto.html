@@ -8,9 +8,59 @@
     <!--Icon-Font-->
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        .mascota{
+            background-image: url(img/cerditoamedias.png);
+            width: 300px;
+            height: 300px;
+            border: none;
+            position:relative;
+            margin-top: 50px;
+            background-size: cover;
+            margin-left: 50px;
+        }
+
+        header {
+    height: 50x;
+    /* background: #AED6F1; */
+    background: #055786;
+    padding: 0 50px;
+    color: black;
+    /*Aplicamos el display flex*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    </style>
 </head>
 
 <body>
+
+    <header>
+        <!--Crear logo-->
+        <!-- <h2 class="logo">Fantastic World</h2> -->
+        <img src="img/Logo.gif" alt="" width="189" height="75">
+        <!--Para el menú debemos hacer un input checkbox-->
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            <!--El &#8811 es para el icono de hamburguesa para el menú-->
+            &#8801
+        </label>
+        <!--Creamos la etiqueta NAV para la navegación de la barra de menú-->
+        <nav class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Blog</a>
+            <a href="#">tickets</a>
+            <a href="contacto.html" target="_blank">Contacto</a>
+            <label for="check" class="esconder-menu">
+                <!--El &#8811 es para el icono de hamburguesa para el menú-->
+                &#215
+            </label>
+        </nav>
+    </header>
+
     <div class="container-form">
         <div class="info-form">
             <h2>Contáctanos</h2>
@@ -25,6 +75,8 @@
             <textarea name="mensaje" placeholder="Tu Mensaje..."></textarea>
             <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
         </form>
+         <div class="mascota"></div>
+
     </div>
 </body>
 
