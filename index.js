@@ -1,4 +1,4 @@
-const btn = document.getElementById('button');
+const btn = document.getElementById('btn');
 
 document.getElementById('form')
     .addEventListener('submit', function (event) {
@@ -18,3 +18,14 @@ document.getElementById('form')
                 alert(JSON.stringify(err));
             });
     });
+
+function ShowSelected() {
+    // Para obtener el valos
+    // var cod = document.getElementById("ticket").value;
+    // alert(cod);
+
+    // Para obtener el texto
+    var combo = document.getElementById("ticket");
+    var selected = combo.options[combo.selectedIndex].text;
+    // alert(selected);
+}
