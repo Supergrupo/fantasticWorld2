@@ -704,7 +704,7 @@ body {
 }
 
 
-.mascota{
+.mascota {
     width: 70%;
     height: 80%;
     position: relative;
@@ -793,4 +793,15 @@ textarea {
 
 .container-form .btn-enviar:hover {
     background: #055786;
+}
+
+/*Ticket*/
+.container-form-tickets {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
 }
