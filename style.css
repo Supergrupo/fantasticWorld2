@@ -7,8 +7,8 @@
     width: 100%;
     height: 100%;
     border: none;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 16px; /*  retiro */
+    padding-right: 16px; 
 }
 
 /* #div1 {
@@ -53,7 +53,7 @@
     border: black solid;
 } */
 
-#div6 {
+#mapa {
     width: 100%;
     /* height: 300px; */
     height: auto;
@@ -194,11 +194,10 @@ header {
     transition: all 0.4s;
 }
 
-/* grid por  8 фото */
+/* grid por  8 imagines del parque */
 .photo-grid {
     width: 100%;
     height: auto;
-
     /* max-width: 1200px;
     margin: 100px; */
     /* Es para el techo */
@@ -231,8 +230,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* seccion 8 fotos */
-/* de Slava  */
+/* seccion 8 fotos del parque*/
 .flip-card {
     background-color: transparent;
     width: 270px;
@@ -276,64 +274,62 @@ body {
     transform: rotateY(180deg);
 }
 
-
-/* de Slava  */
 /*  seccion texto y linea */
 .title {
-    /* Чтобы спрятать часть линий, которые 
-    ** будут вылазить за пределы блока */
+    /* Para ocultar algunas de las líneas que
+     ** subirá fuera del bloque */
     overflow: hidden;
-    /* Выравнивание заголовка по центру, 
-    ** можно использовать left, right */
+    /* Encabezado alineado al centro
+     ** puede ser usado left, right */
     text-align: center;
-    /* Тут можно добавить другие стили для заголовка */
+    /* Aquí puede agregar otros estilos para el encabezado. */
     font-size: 25px;
 }
 
 .title span {
-    /* Стили тега обертки для заголовков 
-    ** в несколько строк */
+    /* Estilos de etiqueta de encabezado
+     ** en varias líneas */
     display: inline-block;
     vertical-align: middle;
 }
 
 .title:before,
 .title:after {
-    /* Обязательно указываем пустое свойство content, 
-    ** иначе псевдоэлементы не появятся на сайте */
+    /* Asegúrese de especificar una propiedad content,
+     ** de lo contrario, los pseudoelementos no aparecerán en el sitio */
     content: "";
-    /* Указываем что наши линии будут строчно-блочные и 
-    ** выравнивание по высоте - по центру */
+    /* Indicamos que nuestras líneas serán inline-block y
+     ** alineación de altura - centrada */
     display: inline-block;
     vertical-align: middle;
-    /* Задаем ширину 100% и выбираем высоту линии, 
-    ** в нашем примере она равна 4 пикселям */
+    /* Establezca el ancho al 100% y elija la altura de la línea,
+     ** en nuestro ejemplo es igual a 4 píxeles */
     width: 100%;
     height: 4px;
-    /* Добавляем цвет для линии */
+    /* Agregar color a la línea */
     background-color: #00cf00;
-    /* Добавляем пседоэлемантам возможность изменить 
-    ** позицию линии, для создания отступов от текста */
+    /* Agregar pseudo-elementos la capacidad de cambiar
+     ** posición de la línea, para crear sangrías a partir del texto */
     position: relative;
 }
 
 .title:before {
-    /* Смещаем левую линию на 100% влево, чтобы линия 
-    ** встала рядом с текстом слева */
+    /* Desplace la línea izquierda 100% a la izquierda para que la línea
+     ** estaba junto al texto de la izquierda */
     margin-left: -100%;
-    /* Указываем в пикселях отступ линии от текста заголовка */
+    /* Especifique en píxeles la sangría de la línea del texto del título */
     left: -14px;
 }
 
 .title:after {
-    /* Смещаем правую линию на 100% вправо, чтобы 
-    ** линия встала рядом с текстом справа */
+    /* Desplace la línea derecha 100% a la derecha para que
+     ** la línea está al lado del texto a la derecha */
     margin-right: -100%;
-    /* Указываем в пикселях отступ линии от текста заголовка */
+    /* Especifique en píxeles la sangría de la línea del texto del título */
     right: -14px;
 }
 
-/* de Slava  */
+/* bloque del anuncios  */
 .slideshow {
     width: 100%;
     height: 420px;
@@ -420,14 +416,14 @@ body {
     }
 }
 
-/* de Slava  */
+/* bloque del anuncios  */
 @media screen and (max-width: 1100px) {
     .slideshow-item-text {
         max-width: 75%;
     }
 }
 
-/* de Slava  */
+/* bloque del anuncios  */
 @media screen and (max-width: 456px) {
     .slideshow-item-text {
         bottom: 0;
@@ -687,7 +683,7 @@ body {
     background: #20033e;
 }
 
-#div10 {
+#info {
     width: 100%;
     height: 450px;
     clear: both;
