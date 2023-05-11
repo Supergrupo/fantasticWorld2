@@ -8,30 +8,78 @@
     <!--Icon-Font-->
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        .mascota {
+            background-image: url(img/cerditoamedias.png);
+            width: 300px;
+            height: 300px;
+            border: none;
+            position: relative;
+            margin-top: 50px;
+            background-size: cover;
+            margin-left: 50px;
+        }
+
+        header {
+            height: 50x;
+            /* background: #AED6F1; */
+            background: #055786;
+            padding: 0 50px;
+            color: black;
+            /*Aplicamos el display flex*/
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container-form-tickets">
-        <!-- <div class="info-form">
-            <h2>Contáctanos</h2>
-            <p>Nos encantaría poder ayudarte, dejanos tus dudas y te contactamos.</p>
-            <a href="#"><i class="fa fa-phone"></i> 622-485-499</a>
-            <a href="#"><i class="fa fa-envelope"></i> fantasticworld@gmail.com</a>
-            <a href="#"><i class="fa fa-map-marked"></i> Mérida, España</a>
-        </div> -->
-        <form action="#" autocomplete="off">
-            <h2>Compra tus tickets</h2>
+
+    <header>
+        <!--Crear logo-->
+        <!-- <h2 class="logo">Fantastic World</h2> -->
+        <img src="img/Logo.gif" alt="" width="189" height="75">
+        <!--Para el menú debemos hacer un input checkbox-->
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            <!--El &#8811 es para el icono de hamburguesa para el menú-->
+            &#8801
+        </label>
+        <!--Creamos la etiqueta NAV para la navegación de la barra de menú-->
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Blog</a>
+            <a href="tickets.html">tickets</a>
+            <a href="contacto.html">Contactos</a>
+            <label for="check" class="esconder-menu">
+                <!--El &#8811 es para el icono de hamburguesa para el menú-->
+                &#215
+            </label>
+        </nav>
+    </header>
+
+    <div class="container-form">
+        <div class="info-form">
+            <h2>Elije de qué forma quieres divertirte</h2>
+        </div>
+        <form action="#" id="form" autocomplete="off">
             <input type="text" name="nombre" placeholder="Tu Nombre" class="campo">
             <input type="emal" name="email" placeholder="Tu Email" class="campo">
-            <textarea name="mensaje" placeholder="Tu Mensaje..."></textarea>
-            <input id="btn" type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
-            <!-- <button>Enviar Mensaje</button> -->
+            <select name="" id="" style="width: 100%; height: 15%;">
+                <option selected>Escoje Ticket</option>
+                <option value="">Adulto</option>
+                <option value="">Familia</option>
+                <option value="">Grupo</option>
+            </select>
+            <div style="padding: 10px;">
+            </div>
+            <input type="text" name="telefono" placeholder="Tu Telefono" class="campo">
+            <button type="submit" name="enviar" class="btn-enviar">Enviar Mensaje</button>
         </form>
+        <div class="mascota"></div>
     </div>
-
-    <script type="text/javascript" src="index.js">
-
-    </script>
 </body>
 
 </html>
