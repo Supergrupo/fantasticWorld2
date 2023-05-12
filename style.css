@@ -604,6 +604,12 @@ body {
     border: none;
 }
 
+.columnitas h1,
+h2,
+p {
+    text-align: center;
+}
+
 
 .mascota {
     width: 70%;
