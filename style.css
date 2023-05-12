@@ -9,12 +9,12 @@
 
 #mapa {
     width: 100%;
-    /* height: 300px; */
     margin: auto;
     height: auto;
     clear: both;
     float: left;
     border: none;
+    margin-top: 10px;
 }
 
 .columnas {
@@ -201,12 +201,13 @@ body {
     /* Para ocultar algunas de las líneas que
      ** subirá fuera del bloque */
     overflow: hidden;
+    margin-top: 30px;
     /* Encabezado alineado al centro
      ** puede ser usado left, right */
     text-align: center;
     /* Aquí puede agregar otros estilos para el encabezado. */
     font-size: 25px;
-    padding: 30px;
+    /* padding: 30px; */
 }
 
 .title span {
@@ -480,7 +481,6 @@ body {
 .container__cards {
     max-width: 1200px;
     margin: auto;
-    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -590,6 +590,7 @@ body {
 #info {
     width: 100%;
     height: 450px;
+    margin-top: 30px;
     clear: both;
     float: left;
     border: none;

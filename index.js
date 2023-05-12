@@ -18,14 +18,3 @@ document.getElementById('form')
                 alert(JSON.stringify(err));
             });
     });
-
-function ShowSelected() {
-    // Para obtener el valos
-    // var cod = document.getElementById("ticket").value;
-    // alert(cod);
-
-    // Para obtener el texto
-    var combo = document.getElementById("ticket");
-    var selected = combo.options[combo.selectedIndex].text;
-    // alert(selected);
-}
